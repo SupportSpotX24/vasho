@@ -3,11 +3,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<script defer data-domain="balangans.com/nh1sUz" src="https://api.publytics.net/js/script.manual.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CJDS382RH"></script>
 <script>
-    window.publytics = window.publytics || function() { (window.publytics.q = window.publytics.q || []).push(arguments) };
-    publytics('pageview');
-</script>      
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8CJDS382RH');
+</script>     
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>和匠デザイン工房｜和モダン内装・外装デザインスタジオ</title>
@@ -884,6 +888,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 </body>
 </html>
     
+
 
 
 
